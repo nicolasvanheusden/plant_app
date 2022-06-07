@@ -34,11 +34,14 @@ class PlantButton extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(size / 2),
-                  child: Image.asset(
-                    plant.imageUrl,
-                    fit: BoxFit.fill,
+                Hero(
+                  tag: plant.name,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(size / 2),
+                    child: Image.asset(
+                      plant.imageUrl,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ),
                 AlignPositioned(

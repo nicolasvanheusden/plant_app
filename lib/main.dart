@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         plants: [
         Plant(
           description: 'lkdnfkjldnfjknbqdsjkbfhd',
-          name: 'lskdnflsqnfjklqsnfd',
+          name: 's:d,f',
           imageUrl: 'assets/images/plant_1.png',
           extras: [
             PlantExtra(
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
         ),
         Plant(
           description: 'lkdnfkjldnfjknbqdsjkbfhd',
-          name: 'lskdnflsqnfjklqsnfd',
+          name: 'mlsd,f',
           imageUrl: 'assets/images/plant_2.png',
           extras: [
             PlantExtra(
@@ -54,7 +54,7 @@ class MyApp extends StatelessWidget {
         ),
         Plant(
           description: 'lkdnfkjldnfjknbqdsjkbfhd',
-          name: 'lskdnflsqnfjklqsnfd',
+          name: 'dslfnjs',
           imageUrl: 'assets/images/plant_2.png',
           extras: [
             PlantExtra(
@@ -100,14 +100,13 @@ class HomePage extends StatelessWidget {
           return Stack(
             fit: StackFit.expand,
             children: [
-              
               Container(
                 color: const Color(0xFF22483F),
               ),
               ...plants.map((plant) => AlignPositioned(
                 alignment: Alignment.center,
-                dx: random.nextDouble() * (100 * (random.nextBool() ? 1 : -1)),
-                dy: random.nextDouble() * (100 * (random.nextBool() ? 1 : -1)),
+                dx: random.nextDouble() * (200 * (random.nextBool() ? 1 : -1)),
+                dy: random.nextDouble() * (200 * (random.nextBool() ? 1 : -1)),
                 child: PlantButton(
                   plant: plant,
                   size: random.nextDouble() * 250 + 50

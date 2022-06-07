@@ -13,21 +13,21 @@ class PlantDetail extends StatelessWidget {
       appBar: AppBar(
         toolbarHeight: 200,
         flexibleSpace: SizedBox(
-              width: MediaQuery.of(context).size.width,
-
-              child: Image.asset(
-                plant.imageUrl,
-                fit: BoxFit.fitWidth,
-              ),
+          width: MediaQuery.of(context).size.width,
+          child: Hero(
+            tag: plant.name,
+            child: Image.asset(
+              plant.imageUrl,
+              fit: BoxFit.fitWidth,
             ),
+          ),
+        ),
       ),
       body: SafeArea(
         top: false,
         child: Stack(
           fit: StackFit.expand,
           children: const [
-            
-
           ],
         ),
       ),
